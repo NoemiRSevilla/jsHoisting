@@ -1,0 +1,114 @@
+<script>
+    {1}
+    var hello = 'world';
+    console.log(hello);
+    // Outcome= world;
+
+    {2}
+    var needle = 'haystack';
+    function test() {
+        var needle = 'magnet';
+        console.log(needle);
+    }
+    test();
+
+    // Outcome=magnet;
+
+    {3}
+    var brendan = 'super cool';
+    function print() {
+        let brendan = 'only okay';
+        console.log(brendan);
+    }
+    console.log(brendan);
+
+    // Outcome = 'only okay'
+    // 'super cool'
+
+    {4}
+    var food = 'chicken';
+    console.log(food);
+
+    function eat() {
+        food = 'half-chicken';
+        console.log(food);
+        var food = 'gone';
+    }
+    eat();
+
+    // Outcome =
+    // 'chicken'
+    // 'half-chicken'
+    {5}
+
+    var mean = function () {
+        let food = "chicken";
+        console.log(food);
+        var food = "fish";
+        console.log(food);
+    }
+    mean();
+    console.log(food);
+
+    // outcome = 
+    // "chicken"
+    // "fish"
+    // "fish"
+
+    {6}
+    var genre = "disco";
+    console.log(genre);
+    function rewind() {
+        let genre = "rock";
+        console.log(genre);
+        let genre = "r&b";
+        console.log(genre);
+    }
+    rewind();
+    console.log(genre);
+
+    // outcome =
+    // 'disco'
+    // 'rock'
+    // 'r&b'
+    // 'disco'
+
+    {7}
+    var dojo = "san jose";
+    console.log(dojo);
+    function learn() {
+        let dojo = "seattle";
+        console.log(dojo);
+        let dojo = "burbank";
+        console.log(dojo);
+    }
+    learn();
+    console.log(dojo);
+
+    outcome =
+    "san jose"
+    "seattle"
+    "burbank"
+    "san jose"
+
+    {8}
+    function makeDojo(name, students) {
+        const dojo = {};
+        dojo.name = name;
+        dojo.students = students;
+        if (dojo.students > 50) {
+            dojo.hiring = true;
+        }
+        else if (dojo.students <= 0) {
+            dojo = "closed for now";
+        }
+        return dojo;
+    }
+    console.log(makeDojo("Chicago", 65));
+    console.log(makeDojo("Berkeley", 0));
+
+    outcome = 
+    "Chicago" true
+    "Brekley" false
+</script>
+
